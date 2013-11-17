@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="public" additionalparam="-linkoffline http://d.android.com/reference file:/date/ProgrameNeinstalabile/Linux/eclipse-adt/sdk/docs/reference" author="true" classpath="libs/gdx.jar:libs/gdx-backend-android.jar:/date/ProgrameNeinstalabile/Linux/eclipse-adt/sdk/platforms/android-17/android.jar" destdir="doc" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="ro.spatarel.android.oogles20,ro.spatarel.android.oogles20.backends,ro.spatarel.android.oogles20.backends.errorsignaling" source="1.6" sourcepath="gen:src" splitindex="true" use="true" version="true"/>
+    </target>
+</project>

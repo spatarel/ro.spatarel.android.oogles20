@@ -1,0 +1,6 @@
+#!/bin/sh
+
+rm -R /date/Programare/Maven/ro.spatarel.android.oogles20/src/main/java/*
+cp -R /date/Programare/Eclipse-android/ro.spatarel.android.oogles20/src/* /date/Programare/Maven/ro.spatarel.android.oogles20/src/main/java
+cp /date/Programare/Eclipse-android/ro.spatarel.android.oogles20/AndroidManifest.xml /date/Programare/Maven/ro.spatarel.android.oogles20
+

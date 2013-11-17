@@ -1,0 +1,224 @@
+GLES20 function                            OOGLES20 method                                                    Support (never, none, full)
+-----------------------------------------------------------------------------------------------------------------------------------------
+glActiveTexture                            OOGLES20.textureUnit                                               full / doc
+glAttachShader                             OOProgram.attachShader                                             full / doc
+glBindAttribLocation                       (none)                                                             never
+glBindBuffer                               OOGLES20Buffer.bind/unbind                                         full / doc
+glBindFramebuffer                          OOGLES20Framebuffer.bind/unbind                                    full / doc
+glBindRenderbuffer                         OOGLES20Renderbuffer.bind/unbind                                   full / doc
+glBindTexture                              OOGLES20Texture.bind/unbind                                        full / doc
+glBlendColor                               OOGLES20PixelProcessing.setBlendingColor                           full / doc
+glBlendEquation                            OOGLES20PixelProcessing.setBlendingEquation                        full / doc
+glBlendEquationSeparate                    OOGLES20PixelProcessing.setBlendingEquationSeparately              full / doc
+glBlendFunc                                OOGLES20PixelProcessing.setBlendingFunction                        full / doc
+glBlendFuncSeparate                        OOGLES20PixelProcessing.setBlendingFunctionSeparately              full / doc
+glBufferData                               OOGLES20Buffer.setData                                             full / doc
+glBufferSubData                            OOGLES20Buffer.setSubData                                          full / doc / untested
+glCheckFramebufferStatus                   OOGLES20Framebuffer.checkStatus                                    full / doc / untested
+glClear                                    OOGLES20Framebuffer.clear                                          full / doc / untested
+glClearColor                               OOGLES20Framebuffer.setColorClearValue                             full / doc
+glClearDepthf                              OOGLES20Framebuffer.setDepthClearValue                             full / doc / untested
+glClearStencil                             OOGLES20Framebuffer.setStencilClearValue                           full / doc / untested
+glColorMask                                OOGLES20PixelProcessing.setColorBufferWriteMask                    full / doc / untested
+glCompileShader                            OOShader.compile                                                   full / doc
+glCompressedTexImage2D                     OOGLES20TextureImage.setCompressedImage2D                          full / doc / untested
+glCompressedTexSubImage2D                  OOGLES20TextureImage.setCompressedSubImage2D                       full / doc / untested
+glCopyTexImage2D                           OOGLES20TextureImage.copyImage2D                                   full / doc / untested
+glCopyTexSubImage2D                        OOGLES20TextureImage.copySubImage2D                                full / doc / untested
+glCreateProgram                            OOProgram.OOProgram                                                full / doc
+glCreateShader                             OOShader.OOShader                                                  full / doc
+glCullFace                                 OOGLES20Rasterization.setCullFaceMode                              full / doc / untested
+glDeleteBuffers                            OOBuffer.finalize                                                  full / doc
+glDeleteFramebuffers                       OOFramebuffer.finalize                                             full / doc
+glDeleteProgram                            OOProgram.finalize                                                 full / doc
+glDeleteRenderbuffers                      OORenderbuffer.finalize                                            full / doc
+glDeleteShader                             OOShader.finalize                                                  full / doc
+glDeleteTextures                           OOTexture.finalize                                                 full / doc
+glDepthFunc                                OOGLES20FragmentProcessing.setDepthTestFunction                    full / doc / untested
+glDepthMask                                OOGLES20PixelProcessing.setDepthBufferWriteMask                    full / doc / untested
+glDepthRangef                              OOGLES20PrimitiveProcessing.setDepthRange                          full / doc / untested
+glDetachShader                             OOProgram.detachShader                                             full / doc / untested
+glDisable                                  (multiple)                                                         full / doc
+glDisableVertexAttribArray                 OOAttribute.disableArray                                           full / doc
+glDrawArrays                               OOGLES20Framebuffer.drawArrays                                     full / doc
+glDrawElements                             OOGLES20Framebuffer.drawElements                                   full / doc
+glEnable                                   (multiple)                                                         full / doc
+glEnableVertexAttribArray                  OOAttribute.enableArray                                            full / doc
+glFinish                                   OOGLES20.finish                                                    full / doc / untested
+glFlush                                    OOGLES20.flush                                                     full / doc / untested
+glFramebufferRenderbuffer                  OOGLES20FramebufferAttachment.attachRenderbuffer                   full / doc / untested
+glFramebufferTexture2D                     OOGLES20FramebufferAttachment.attachTexture                        full / doc / untested
+glFrontFace                                OOGLES20Rasterization.setFrontFaceMode                             full / doc / untested
+glGenBuffers                               OOBuffer.OOBuffer                                                  full / doc
+glGenFramebuffers                          OOFramebuffer.OOFramebuffer                                        full / doc
+glGenRenderbuffers                         OORenderbuffer.OORenderbuffer                                      full / doc
+glGenTextures                              OOTexture.OOTexture                                                full / doc
+glGenerateMipmap                           OOGLES20Texture.generateMipmap                                     full / doc
+glGet                                      (multiple)                                                         full / doc / untested
+glGetActiveAttrib                          OOProgram.getAttribute*                                            full / doc / untested
+glGetActiveUniform                         OOProgram.getUniform*                                              full / doc / untested
+glGetAttachedShaders                       OOProgram.getAttachedShaders                                       full / doc
+glGetAttribLocation                        OOProgram.getVector/MatrixAttribute                                full / doc / untested
+glGetBufferParameteriv                     OOGLES20Buffer.get*                                                full / doc
+glGetError                                 OOGLES20.getError                                                  full / doc
+glGetFramebufferAttachmentParameteriv      OOGLES20FramebufferAttachment.get*                                 full / doc / untested
+glGetProgramInfoLog                        OOProgram.getInfoLog                                               full / doc / untested
+glGetProgramiv                             OOProgram.get*                                                     full / doc
+glGetRenderbufferParameteriv               OOGLES20Renderbuffer.get*                                          full / doc / untested
+glGetShaderInfoLog                         OOShader.getInfoLog                                                full / doc / untested
+glGetShaderPrecisionFormat                 OOGLES20Implementation.getPrecisionFormat                          full / doc
+glGetShaderSource                          OOShader.getSource                                                 full / doc / untested
+glGetShaderiv                              OOShader.get*                                                      full / doc / untested
+glGetString                                (multiple)                                                         full / doc
+glGetTexParameter                          OOGLES20Texture.get*                                               full / doc / untested
+glGetUniform                               OOProgram.getUniformValueiv/fv                                     full / doc / untested
+glGetUniformLocation                       OOProgram.getUniform                                               full / doc
+glGetVertexAttrib                          OOAttribute.get*                                                   full / doc / untested
+glGetVertexAttribPointerv                  (none)                                                             never
+glHint                                     (multiple)                                                         full / doc / untested
+glIsBuffer                                 (none)                                                             never
+glIsEnabled                                (multiple)                                                         full / doc / untested
+glIsFramebuffer                            (none)                                                             never
+glIsProgram                                (none)                                                             never
+glIsRenderbuffer                           (none)                                                             never
+glIsShader                                 (none)                                                             never
+glIsTexture                                (none)                                                             never
+glLineWidth                                OOGLES20Rasterization.setLineWidth                                 full / doc / untested
+glLinkProgram                              OOProgram.link                                                     full / doc
+glPixelStorei                              OOGLES20.setPixelAlignment                                         full / doc / untested
+glPolygonOffset                            OOGLES20Rasterization.setPolygonOffset                             full / doc / untested
+glReadPixels                               OOGLES20Framebuffer.readPixels                                     full / doc / untested
+glReleaseShaderCompiler                    OOShader.releaseCompiler                                           full / doc / untested
+glRenderbufferStorage                      OOGLES20Renderbuffer.setStorage                                    full / doc
+glSampleCoverage                           OOGLES20FragmentProcessing.setSampleCoverage                       full / doc / untested
+glScissor                                  OOGLES20FragmentProcessing.setScissorBox                           full / doc / untested
+glShaderBinary                             OOShader.setBinary                                                 full / doc / untested
+glShaderSource                             OOShader.setSource                                                 full / doc
+glStencilFunc                              OOGLES20FragmentProcessing.setStencilFunction                      full / doc / untested
+glStencilFuncSeparate                      OOGLES20FragmentProcessing.setStencilFunctionSeparately            full / doc / untested
+glStencilMask                              OOGLES20PixelProcessing.setStencilBufferWriteMask                  full / doc / untested
+glStencilMaskSeparate                      OOGLES20PixelProcessing.setStencilBufferWriteMaskSeparately        full / doc / untested
+glStencilOp                                OOGLES20FragmentProcessing.setStencilAction                        full / doc / untested
+glStencilOpSeparate                        OOGLES20FragmentProcessing.setStencilActionSeparately              full / doc / untested
+glTexImage2D                               OOGLES20TextureImage.setImage2D                                    full / doc
+glTexParameter                             OOGLES20Texture.set*                                               full / doc
+glTexSubImage2D                            OOGLES20TextureImage.setSubImage2D                                 full / doc / untested
+glUniform                                  OOUniform.set*                                                     full / doc
+glUseProgram                               OOGLES20.useProgram                                                full / doc
+glValidateProgram                          OOProgram.validate                                                 full / doc / untested
+glVertexAttrib                             OOAttribute.setForAll*                                             full / doc
+glVertexAttribPointer                      OOAttribute.setBuffer                                              full / doc
+glViewport                                 OOGLES20PrimitiveProcessing.setViewport                            full / doc
+
+GLES20 glHint argument                     OOGLES20 method                                                    Support (never, none, full)
+-----------------------------------------------------------------------------------------------------------------------------------------
+GL_GENERATE_MIPMAP_HINT                    OOGLES20.setGenerateMipmapHint                                     full / doc / untested
+
+GLES20 glEnable argument                   OOGLES20 method                                                    Support (never, none, full)
+-----------------------------------------------------------------------------------------------------------------------------------------
+GL_BLEND                                   OOGLES20PixelProcessing.enableBlending                             full / doc
+GL_CULL_FACE                               OOGLES20Rasterization.enableCullFace                               full / doc
+GL_DEPTH_TEST                              OOGLES20FragmentProcessing.enableDepthTest                         full / doc
+GL_DITHER                                  OOGLES20PixelProcessing.enableDithering                            full / doc / untested
+GL_POLYGON_OFFSET_FILL                     OOGLES20Rasterization.enablePolygonOffsetFill                      full / doc / untested
+GL_SAMPLE_ALPHA_TO_COVERAGE                OOGLES20FragmentProcessing.enableSampleAlphaToCoverage             full / doc / untested
+GL_SAMPLE_COVERAGE                         OOGLES20FragmentProcessing.enableSampleCoverage                    full / doc / untested
+GL_SCISSOR_TEST                            OOGLES20FragmentProcessing.enableScissorTest                       full / doc / untested
+GL_STENCIL_TEST                            OOGLES20FragmentProcessing.enableStencilTest                       full / doc / untested
+
+GLES20 glGetString argument                OOGLES20 method                                                    Support (never, none, full)
+-----------------------------------------------------------------------------------------------------------------------------------------
+GL_VENDOR                                  OOGLES20Implementation.getVendor                                   full / doc
+GL_RENDERER                                OOGLES20Implementation.getRenderer                                 full / doc
+GL_VERSION                                 OOGLES20Implementation.getVersion                                  full / doc
+GL_SHADING_LANGUAGE_VERSION                OOGLES20Implementation.getShadingLanguageVersion                   full / doc
+GL_EXTENSIONS                              OOGLES20Implementation.getExtensions                               full / doc
+
+GLES20 glGet argument                      OOGLES20 method                                                    Support (never, none, full)
+-----------------------------------------------------------------------------------------------------------------------------------------
+GL_ACTIVE_TEXTURE                          (none)                                                             never
+GL_ALIASED_LINE_WIDTH_RANGE                OOGLES20Implementation.getAliasedLineWidthsRange                   full / doc / untested
+GL_ALIASED_POINT_SIZE_RANGE                OOGLES20Implementation.getAliasedPointSizesRange                   full / doc / untested
+GL_ALPHA_BITS                              OOGLES20Implementation.getColorAlphaBits                           full / doc
+GL_ARRAY_BUFFER_BINDING                    OOGLES20Buffer.getBindedBuffer                                     full / doc / untested
+GL_BLEND                                   (duplicate)                                                        never
+GL_BLEND_COLOR                             OOGLES20PixelProcessing.getBlendingColor                           full / doc / untested
+GL_BLEND_DST_ALPHA                         OOGLES20PixelProcessing.getBlendingDestinationAlphaFunction        full / doc / untested
+GL_BLEND_DST_RGB                           OOGLES20PixelProcessing.getBlendingDestinationRGBFunction          full / doc / untested
+GL_BLEND_EQUATION_ALPHA                    OOGLES20PixelProcessing.getBlendingAlphaEquation                   full / doc / untested
+GL_BLEND_EQUATION_RGB                      OOGLES20PixelProcessing.getBlendingRGBEquation                     full / doc / untested
+GL_BLEND_SRC_ALPHA                         OOGLES20PixelProcessing.getBlendingSourceAlphaFunction             full / doc / untested
+GL_BLEND_SRC_RGB                           OOGLES20PixelProcessing.getBlendingSourceRGBFunction               full / doc / untested
+GL_BLUE_BITS                               OOGLES20Implementation.getColorBlueBits                            full / doc
+GL_COLOR_CLEAR_VALUE                       OOGLES20Framebuffer.getColorClearValue                             full / doc / untested
+GL_COLOR_WRITEMASK                         OOGLES20PixelProcessing.getColorBufferWriteMask                    full / doc / untested
+GL_COMPRESSED_TEXTURE_FORMATS              OOGLES20Implementation.getCompressedTextureFormats                 full / doc
+GL_CULL_FACE                               (duplicate)                                                        never
+GL_CULL_FACE_MODE                          OOGLES20Rasterization.getCullFaceMode                              full / doc / untested
+GL_CURRENT_PROGRAM                         OOGLES20.getCurrentProgram                                         full / doc / untested
+GL_DEPTH_BITS                              OOGLES20Implementation.getDepthBits                                full / doc
+GL_DEPTH_CLEAR_VALUE                       OOGLES20Framebuffer.getDepthClearValue                             full / doc / untested
+GL_DEPTH_FUNC                              OOGLES20FragmentProcessing.getDepthTestFunction                    full / doc / untested
+GL_DEPTH_RANGE                             OOGLES20PrimitiveProcessing.getDepthRange                          full / doc
+GL_DEPTH_TEST                              (duplicate)                                                        never
+GL_DEPTH_WRITEMASK                         OOGLES20PixelProcessing.getDepthBufferWriteMask                    full / doc / untested
+GL_DITHER                                  (duplicate)                                                        never
+GL_ELEMENT_ARRAY_BUFFER_BINDING            OOGLES20Buffer.getBindedBuffer                                     full / doc / untested
+GL_FRAMEBUFFER_BINDING                     OOGLES20Framebuffer.getBindedFramebuffer                           full / doc / untested
+GL_FRONT_FACE                              OOGLES20Rasterization.getFrontFaceMode                             full / doc / untested
+GL_GENERATE_MIPMAP_HINT                    OOGLES20.getGenerateMipmapHint                                     full / doc / untested
+GL_GREEN_BITS                              OOGLES20Implementation.getColorGreenBits                           full / doc
+GL_IMPLEMENTATION_COLOR_READ_FORMAT        OOGLES20Implementation.getPreferredPixelFormat                     full / doc
+GL_IMPLEMENTATION_COLOR_READ_TYPE          OOGLES20Implementation.getPreferredPixelDataType                   full / doc
+GL_LINE_WIDTH                              OOGLES20Rasterization.getLineWidth                                 full / doc / untested
+GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS        OOGLES20Implementation.getMaximumTextureUnits                      full / doc
+GL_MAX_CUBE_MAP_TEXTURE_SIZE               OOGLES20Implementation.getMaximumCubeMapTextureDimension           full / doc
+GL_MAX_FRAGMENT_UNIFORM_VECTORS            OOGLES20Implementation.getMaximumFragmentUniformVectors            full / doc
+GL_MAX_RENDERBUFFER_SIZE                   OOGLES20Implementation.getMaximumRenderbufferSize                  full / doc
+GL_MAX_TEXTURE_IMAGE_UNITS                 OOGLES20Implementation.getMaximumFragmentTextureUnits              full / doc
+GL_MAX_TEXTURE_SIZE                        OOGLES20Implementation.getMaximumTextureDimension                  full / doc / untested
+GL_MAX_VARYING_VECTORS                     OOGLES20Implementation.getMaximumVaryingVectors                    full / doc
+GL_MAX_VERTEX_ATTRIBS                      OOGLES20Implementation.getMaximumAttributes                        full / doc
+GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS          OOGLES20Implementation.getMaximumVertexTextureUnits                full / doc
+GL_MAX_VERTEX_UNIFORM_VECTORS              OOGLES20Implementation.getMaximumVertexUniformVectors              full / doc
+GL_MAX_VIEWPORT_DIMS                       OOGLES20Implementation.getMaximumViewportDimensions                full / doc / untested
+GL_NUM_COMPRESSED_TEXTURE_FORMATS          OOGLES20Implementation.getCompressedTextureFormatsCount            full / doc
+GL_NUM_SHADER_BINARY_FORMATS               OOGLES20Implementation.getShaderBinaryFormatsCount                 full / doc / untested
+GL_PACK_ALIGNMENT                          OOGLES20.getPixelPackAlignment                                     full / doc / untested
+GL_POLYGON_OFFSET_FACTOR                   OOGLES20Rasterization.getPolygonOffsetFactor                       full / doc / untested
+GL_POLYGON_OFFSET_FILL                     (duplicate)                                                        never
+GL_POLYGON_OFFSET_UNITS                    OOGLES20Rasterization.getPolygonOffsetUnits                        full / doc / untested
+GL_RED_BITS                                OOGLES20Implementation.getColorRedBits                             full / doc
+GL_RENDERBUFFER_BINDING                    OOGLES20Renderbuffer.getBindedRenderbuffer                         full / doc / untested
+GL_SAMPLE_ALPHA_TO_COVERAGE                (duplicate)                                                        never
+GL_SAMPLE_BUFFERS                          OOGLES20Implementation.getMultisampleBuffersCount                  full / doc / untested
+GL_SAMPLE_COVERAGE                         (duplicate)                                                        never
+GL_SAMPLE_COVERAGE_INVERT                  OOGLES20FragmentProcessing.isSampleCoverageInverted                full / doc / untested
+GL_SAMPLE_COVERAGE_VALUE                   OOGLES20FragmentProcessing.getSampleCoverageValue                  full / doc / untested
+GL_SAMPLES                                 OOGLES20Implementation.getMultisampleCoverageMaskSize              full / doc / untested
+GL_SCISSOR_BOX                             OOGLES20FragmentProcessing.getScissorBox                           full / doc / untested
+GL_SCISSOR_TEST                            (duplicate)                                                        never
+GL_SHADER_BINARY_FORMATS                   OOGLES20Implementation.getShaderBinaryFormats                      full / doc / untested
+GL_SHADER_COMPILER                         OOGLES20Implementation.isShaderCompilerSupported                   full / doc / untested
+GL_STENCIL_BACK_FAIL                       OOGLES20FragmentProcessing.getBackStencilFailAction                full / doc / untested
+GL_STENCIL_BACK_FUNC                       OOGLES20FragmentProcessing.getBackStencilFunction                  full / doc / untested
+GL_STENCIL_BACK_PASS_DEPTH_FAIL            OOGLES20FragmentProcessing.getBackStencilPassDepthFailAction       full / doc / untested
+GL_STENCIL_BACK_PASS_DEPTH_PASS            OOGLES20FragmentProcessing.getBackStencilPassDepthPassAction       full / doc / untested
+GL_STENCIL_BACK_REF                        OOGLES20FragmentProcessing.getBackStencilReferenceValue            full / doc / untested
+GL_STENCIL_BACK_VALUE_MASK                 OOGLES20FragmentProcessing.getBackStencilMask                      full / doc / untested
+GL_STENCIL_BACK_WRITEMASK                  OOGLES20PixelProcessing.getBackStencilBufferMask                   full / doc / untested
+GL_STENCIL_BITS                            OOGLES20Implementation.getStencilBits                              full / doc
+GL_STENCIL_CLEAR_VALUE                     OOGLES20Framebuffer.getStencilClearValue                           full / doc / untested
+GL_STENCIL_FAIL                            OOGLES20FragmentProcessing.getFrontStencilFailAction               full / doc / untested
+GL_STENCIL_FUNC                            OOGLES20FragmentProcessing.getFrontStencilFunction                 full / doc / untested
+GL_STENCIL_PASS_DEPTH_FAIL                 OOGLES20FragmentProcessing.getFrontStencilPassDepthFailAction      full / doc / untested
+GL_STENCIL_PASS_DEPTH_PASS                 OOGLES20FragmentProcessing.getFrontStencilPassDepthPassAction      full / doc / untested
+GL_STENCIL_REF                             OOGLES20FragmentProcessing.getFrontStencilReferenceValue           full / doc / untested
+GL_STENCIL_TEST                            (duplicate)                                                        never
+GL_STENCIL_VALUE_MASK                      OOGLES20FragmentProcessing.getFrontStencilMask                     full / doc / untested
+GL_STENCIL_WRITEMASK                       OOGLES20PixelProcessing.getFrontStencilBufferMask                  full / doc / untested
+GL_SUBPIXEL_BITS                           OOGLES20Implementation.getSubpixelBits                             full / doc / untested
+GL_TEXTURE_BINDING_2D                      OOGLES20Texture2D.getBindedTexture                                 full / doc / untested
+GL_TEXTURE_BINDING_CUBE_MAP                OOGLES20TextureCubeMap.getBindedTexture                            full / doc / untested
+GL_UNPACK_ALIGNMENT                        OOGLES20.getPixelUnpackAlignment                                   full / doc / untested
+GL_VIEWPORT                                OOGLES20PrimitiveProcessing.getViewport                            full / doc
