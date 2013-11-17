@@ -130,13 +130,13 @@ public class OOGLES20TextureImage {
      *     <li>{@link OOError#INVALID_VALUE} is generated if {@code level} is less than {@code 0}.</li>
      *     <li>{@link OOError#INVALID_VALUE} may be generated if {@code level} is greater than
      *     <i>log<sub>2</sub>max</i>, where <i>max</i> is the returned value of {@link
-     *     OOGLES20Implementation#getMaximumTextureDimension} when the target is {@link OOGLES20TextureUnit#tex2D} or
-     *     {@link OOGLES20Implementation#getMaximumCubeMapTextureDimension} when target is {@link
+     *     OOGLES20Implementation#getMaximum2DTextureSize} when the target is {@link OOGLES20TextureUnit#tex2D} or
+     *     {@link OOGLES20Implementation#getMaximumCubeMapTextureSize} when target is {@link
      *     OOGLES20TextureUnit#texCubeMap}.</li>
      *     <li>{@link OOError#INVALID_VALUE} is generated if {@code format} is not an accepted format.</li>
      *     <li>{@link OOError#INVALID_VALUE} is generated if {@code width} or {@code height} is less than {@code 0} or
-     *     greater than {@link OOGLES20Implementation#getMaximumTextureDimension} when target is {@link
-     *     OOGLES20TextureUnit#tex2D} or {@link OOGLES20Implementation#getMaximumCubeMapTextureDimension} when target is
+     *     greater than {@link OOGLES20Implementation#getMaximum2DTextureSize} when target is {@link
+     *     OOGLES20TextureUnit#tex2D} or {@link OOGLES20Implementation#getMaximumCubeMapTextureSize} when target is
      *     {@link OOGLES20TextureUnit#texCubeMap}.</li>
      *     <!-- GL_INVALID_VALUE is generated if border is not 0. -->
      *     <!-- GL_INVALID_OPERATION is generated if format does not match internalformat.-->
@@ -163,8 +163,8 @@ public class OOGLES20TextureImage {
      * @param type Specifies the data type of the texel data.
      * @param data Specifies a pointer to the image data in memory.
      * 
-     * @see OOGLES20Implementation#getMaximumTextureDimension
-     * @see OOGLES20Implementation#getMaximumCubeMapTextureDimension
+     * @see OOGLES20Implementation#getMaximum2DTextureSize
+     * @see OOGLES20Implementation#getMaximumCubeMapTextureSize
      * @see #setCompressedImage2D
      * @see #setCompressedSubImage2D
      * @see OOGLES20Framebuffer#copyToTextureImage2D
@@ -258,7 +258,7 @@ public class OOGLES20TextureImage {
      *     <li>{@link OOError#INVALID_VALUE} is generated if {@code level} is less than {@code 0}.</li>
      *     <li>{@link OOError#INVALID_VALUE} may be generated if {@code level} is greater than
      *     <i>log<sub>2</sub>max</i>, where <i>max</i> is the returned value of {@link
-     *     OOGLES20Implementation#getMaximumTextureDimension}.</li>
+     *     OOGLES20Implementation#getMaximum2DTextureSize}.</li>
      *     <li>{@link OOError#INVALID_VALUE} is generated if <i>xOffset < 0</i>, <i>xOffset + width > w</i>,
      *     <i>yOffset < 0</i> or <i>yOffset + height > h</i>, where <i>w</i> is the width and <i>h</i> is the height of
      *     the texture image being modified.</li>
@@ -290,8 +290,8 @@ public class OOGLES20TextureImage {
      * @param type Specifies the data type of the pixel data.
      * @param data Specifies a pointer to the image data in memory.
      * 
-     * @see OOGLES20Implementation#getMaximumTextureDimension
-     * @see OOGLES20Implementation#getMaximumCubeMapTextureDimension
+     * @see OOGLES20Implementation#getMaximum2DTextureSize
+     * @see OOGLES20Implementation#getMaximumCubeMapTextureSize
      * @see #setCompressedImage2D
      * @see #setCompressedSubImage2D
      * @see OOGLES20Framebuffer#copyToTextureImage2D
@@ -377,12 +377,12 @@ public class OOGLES20TextureImage {
      *     <li>{@link OOError#INVALID_VALUE} is generated if {@code level} is less than {@code 0}.</li>
      *     <li>{@link OOError#INVALID_VALUE} may be generated if {@code level} is greater than
      *     <i>log<sub>2</sub>max</i>, where <i>max</i> is the returned value of {@link
-     *     OOGLES20Implementation#getMaximumTextureDimension} when the target is {@link OOGLES20TextureUnit#tex2D} or
-     *     {@link OOGLES20Implementation#getMaximumCubeMapTextureDimension} when target is {@link
+     *     OOGLES20Implementation#getMaximum2DTextureSize} when the target is {@link OOGLES20TextureUnit#tex2D} or
+     *     {@link OOGLES20Implementation#getMaximumCubeMapTextureSize} when target is {@link
      *     OOGLES20TextureUnit#texCubeMap}.</li>
      *     <li>{@link OOError#INVALID_VALUE} is generated if {@code width} or {@code height} is less than {@code 0} or
-     *     greater than {@link OOGLES20Implementation#getMaximumTextureDimension} when the target is {@link
-     *     OOGLES20TextureUnit#tex2D} or {@link OOGLES20Implementation#getMaximumCubeMapTextureDimension} when target is
+     *     greater than {@link OOGLES20Implementation#getMaximum2DTextureSize} when the target is {@link
+     *     OOGLES20TextureUnit#tex2D} or {@link OOGLES20Implementation#getMaximumCubeMapTextureSize} when target is
      *     {@link OOGLES20TextureUnit#texCubeMap}.</li>
      *     <!-- GL_INVALID_VALUE is generated if border is not 0. -->
      *     <li>{@link OOError#INVALID_VALUE} is generated if {@code imageSize} is not consistent with the format,
@@ -411,8 +411,8 @@ public class OOGLES20TextureImage {
      * 
      * @see OOGLES20Implementation#getCompressedTextureFormatsCount
      * @see OOGLES20Implementation#getCompressedTextureFormats
-     * @see OOGLES20Implementation#getMaximumTextureDimension
-     * @see OOGLES20Implementation#getMaximumCubeMapTextureDimension
+     * @see OOGLES20Implementation#getMaximum2DTextureSize
+     * @see OOGLES20Implementation#getMaximumCubeMapTextureSize
      * @see #setCompressedSubImage2D
      * @see OOGLES20Framebuffer#copyToTextureImage2D
      * @see OOGLES20Framebuffer#copyToTextureSubImage2D
@@ -457,8 +457,8 @@ public class OOGLES20TextureImage {
      *     <li>{@link OOError#INVALID_VALUE} is generated if {@code level} is less than {@code 0}.</li>
      *     <li>{@link OOError#INVALID_VALUE} may be generated if {@code level} is greater than
      *     <i>log<sub>2</sub>max</i>, where <i>max</i> is the returned value of {@link
-     *     OOGLES20Implementation#getMaximumTextureDimension} when the target is {@link OOGLES20TextureUnit#tex2D} or
-     *     {@link OOGLES20Implementation#getMaximumCubeMapTextureDimension} when target is {@link
+     *     OOGLES20Implementation#getMaximum2DTextureSize} when the target is {@link OOGLES20TextureUnit#tex2D} or
+     *     {@link OOGLES20Implementation#getMaximumCubeMapTextureSize} when target is {@link
      *     OOGLES20TextureUnit#texCubeMap}.</li>
      *     <li>{@link OOError#INVALID_VALUE} is generated if <i>xOffset < 0</i>, <i>(xOffset + width) > w</i>,
      *     <i>yOffset < 0</i> or <i>(yOffset + height) > h</i>, where <i>w</i> is the width and <i>h</i> is the height
@@ -496,8 +496,8 @@ public class OOGLES20TextureImage {
      * 
      * @see OOGLES20Implementation#getCompressedTextureFormatsCount
      * @see OOGLES20Implementation#getCompressedTextureFormats
-     * @see OOGLES20Implementation#getMaximumTextureDimension
-     * @see OOGLES20Implementation#getMaximumCubeMapTextureDimension
+     * @see OOGLES20Implementation#getMaximum2DTextureSize
+     * @see OOGLES20Implementation#getMaximumCubeMapTextureSize
      * @see #setCompressedImage2D
      * @see OOGLES20Framebuffer#copyToTextureImage2D
      * @see OOGLES20Framebuffer#copyToTextureSubImage2D

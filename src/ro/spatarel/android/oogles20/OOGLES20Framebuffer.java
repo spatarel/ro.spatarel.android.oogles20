@@ -808,12 +808,12 @@ public class OOGLES20Framebuffer {
      *     <li>{@link OOError#INVALID_VALUE} is generated if {@code level} is less than {@code 0}.</li>
      *     <li>{@link OOError#INVALID_VALUE} may be generated if {@code level} is greater than
      *     <i>log<sub>2</sub>max</i>, where <i>max</i> is the returned value of {@link
-     *     OOGLES20Implementation#getMaximumTextureDimension} when the target is {@link OOGLES20TextureUnit#tex2D} or
-     *     {@link OOGLES20Implementation#getMaximumCubeMapTextureDimension} when target is {@link
+     *     OOGLES20Implementation#getMaximum2DTextureSize} when the target is {@link OOGLES20TextureUnit#tex2D} or
+     *     {@link OOGLES20Implementation#getMaximumCubeMapTextureSize} when target is {@link
      *     OOGLES20TextureUnit#texCubeMap}.</li>
      *     <li>{@link OOError#INVALID_VALUE} is generated if {@code width} or {@code height} is less than {@code 0} or
-     *     greater than {@link OOGLES20Implementation#getMaximumTextureDimension} when target is {@link
-     *     OOGLES20TextureUnit#tex2D} or {@link OOGLES20Implementation#getMaximumCubeMapTextureDimension} when target is
+     *     greater than {@link OOGLES20Implementation#getMaximum2DTextureSize} when target is {@link
+     *     OOGLES20TextureUnit#tex2D} or {@link OOGLES20Implementation#getMaximumCubeMapTextureSize} when target is
      *     {@link OOGLES20TextureUnit#texCubeMap}.</li>
      *     <!-- GL_INVALID_VALUE is generated if border is not 0. -->
      *     <li>{@link OOError#INVALID_OPERATION} is generated if the currently bound framebuffer's format does not
@@ -841,8 +841,8 @@ public class OOGLES20Framebuffer {
      * @param height Specifies the height of the texture image. All implementations support 2D texture images that are
      * at least 64 texels high and cube-mapped texture images that are at least 16 texels high.
      * 
-     * @see OOGLES20Implementation#getMaximumTextureDimension
-     * @see OOGLES20Implementation#getMaximumCubeMapTextureDimension
+     * @see OOGLES20Implementation#getMaximum2DTextureSize
+     * @see OOGLES20Implementation#getMaximumCubeMapTextureSize
      * @see #checkStatus
      * @see OOGLES20TextureImage#setCompressedImage2D
      * @see OOGLES20TextureImage#setCompressedSubImage2D
@@ -901,7 +901,7 @@ public class OOGLES20Framebuffer {
      *     GL_TEXTURE_CUBE_MAP_POSITIVE_Z or GL_TEXTURE_CUBE_MAP_NEGATIVE_Z. -->
      *     <li>{@link OOError#INVALID_VALUE} is generated if {@code level} is less than {@code 0}.</li>
      *     <li>{@link OOError#INVALID_VALUE} may be generated if <i>level > log<sub>2</sub>(max)</i>, where <i>max</i>
-     *     is the returned value of {@link OOGLES20Implementation#getMaximumTextureDimension}.</li>
+     *     is the returned value of {@link OOGLES20Implementation#getMaximum2DTextureSize}.</li>
      *     <li>{@link OOError#INVALID_VALUE} is generated if <i>xOffset < 0</i>, <i>(xOffset + width) > w</i>,
      *     <i>yOffset < 0</i> or <i>(yOffset + height) > h</i>, where <i>w</i> is the width and <i>h</i> is the height
      *     of the texture image being modified.</li>
@@ -934,8 +934,8 @@ public class OOGLES20Framebuffer {
      * @param width Specifies the width of the texture subimage.
      * @param height Specifies the height of the texture subimage.
      * 
-     * @see OOGLES20Implementation#getMaximumTextureDimension
-     * @see OOGLES20Implementation#getMaximumCubeMapTextureDimension
+     * @see OOGLES20Implementation#getMaximum2DTextureSize
+     * @see OOGLES20Implementation#getMaximumCubeMapTextureSize
      * @see #checkStatus
      * @see #copyToTextureImage2D
      * @see OOGLES20TextureImage#setImage2D
