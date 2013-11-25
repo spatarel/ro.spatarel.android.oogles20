@@ -33,7 +33,7 @@ import ro.spatarel.android.oogles20.OpenGLES20;
  * 
  * @author Dan-Constantin Sp&#x103;t&#x103;rel
  */
-public abstract class AdroidGLES20Decorator implements OpenGLES20 {
+public abstract class AndroidGLES20Decorator implements OpenGLES20 {
     /**
      * <p>Instance of the decorated {@link OpenGLES20} object.</p>
      */
@@ -62,7 +62,7 @@ public abstract class AdroidGLES20Decorator implements OpenGLES20 {
      * 
      * @param base The decorated {@link OpenGLES20} object.
      */
-    protected AdroidGLES20Decorator(OpenGLES20 base) {
+    protected AndroidGLES20Decorator(OpenGLES20 base) {
         this.base = base;
     }
     

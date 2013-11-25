@@ -27,9 +27,9 @@ import ro.spatarel.android.oogles20.OpenGLES20;
  * 
  * @author Dan-Constantin Sp&#x103;t&#x103;rel
  */
-public class AdroidGLES20Logger extends AdroidGLES20Decorator {
+public class AndroidGLES20Logger extends AndroidGLES20Decorator {
     
-    private static final String TAG = AdroidGLES20Logger.class.getName();
+    private static final String TAG = AndroidGLES20Logger.class.getName();
     
     private final PrintStream stream;
     
@@ -40,7 +40,7 @@ public class AdroidGLES20Logger extends AdroidGLES20Decorator {
      * 
      * @param base The decorated {@link OpenGLES20} object.
      */
-    public AdroidGLES20Logger(OpenGLES20 base) {
+    public AndroidGLES20Logger(OpenGLES20 base) {
         super(base);
         this.stream = null;
         
@@ -55,7 +55,7 @@ public class AdroidGLES20Logger extends AdroidGLES20Decorator {
      * @param base The decorated {@link OpenGLES20} object.
      * @param stream The {@link PrintStream} that logs the execution
      */
-    public AdroidGLES20Logger(OpenGLES20 base, PrintStream stream) {
+    public AndroidGLES20Logger(OpenGLES20 base, PrintStream stream) {
         super(base);
         this.stream = stream;
         

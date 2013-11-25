@@ -1,7 +1,7 @@
 package ro.spatarel.android.oogles20.backends.errorsignaling;
 
 import ro.spatarel.android.oogles20.OpenGLES20;
-import ro.spatarel.android.oogles20.backends.AdroidGLES20Decorator;
+import ro.spatarel.android.oogles20.backends.AndroidGLES20Decorator;
 
 /**
  * <p>Decorator for {@link OpenGLES20} raising appropriate exceptions for every generated error.</p>
@@ -23,7 +23,7 @@ import ro.spatarel.android.oogles20.backends.AdroidGLES20Decorator;
  * 
  * @author Dan-Constantin Sp&#x103;t&#x103;rel
  */
-public class AdroidGLES20ErrorSignaling extends AdroidGLES20Decorator {
+public class AndroidGLES20ErrorSignaling extends AndroidGLES20Decorator {
 
     /**
      * <p>Creates a decorator for a specified {@link OpenGLES20} object that raises appropriate exceptions for every
@@ -31,7 +31,7 @@ public class AdroidGLES20ErrorSignaling extends AdroidGLES20Decorator {
      * 
      * @param base The decorated {@link OpenGLES20} object.
      */
-    public AdroidGLES20ErrorSignaling(OpenGLES20 base) {
+    public AndroidGLES20ErrorSignaling(OpenGLES20 base) {
         super(base);
     }
     
